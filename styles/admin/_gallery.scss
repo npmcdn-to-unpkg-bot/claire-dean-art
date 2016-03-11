@@ -1,0 +1,36 @@
+
+.image-edit-toolbelt {
+   height: 30px;
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   width: 120px;
+}
+
+.toolbelt-item {
+   height: 30px;
+   width: 30px;
+   border-radius: 3em;
+   background: #512DA8;
+   float: left;
+   margin-left: 8px;
+   color: #E0E0E0;
+   padding: 5px;
+   padding-left: 7px;
+   cursor: pointer;
+   box-shadow: 0 1px 4px black;
+   position: relative;
+   font-size: 20px;
+}
+
+.title-to-edit {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.edit-title {
+    text-align: center;
+}

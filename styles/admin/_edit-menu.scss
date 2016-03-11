@@ -1,0 +1,158 @@
+
+/* Global Admin Page */
+
+
+// Edit Button + Inner Styling
+.admin-edit-menu-btn {
+   position: fixed;
+   height: 60px;
+   width: 60px;
+   z-index: 1000;
+   background: #673AB7;
+   top: 100px;
+   right: 25px;
+   border-radius: 3em;
+   box-shadow: 0px 1px 3px #3C3C3C;
+}
+
+.admin-edit-menu-btn:hover {
+   transform: scale(1.07);
+   box-shadow: 1px 2px 10px #3C3C3C;
+   cursor: pointer;
+}
+
+
+.admin-edit-menu-btn-inner {
+   font-size: 30px;
+   top: 15px;
+   left: 17px;
+   position: relative;
+   color: #E0E0E0;
+}
+
+.admin-edit-menu.fade {
+   position: fixed;
+   height: auto;
+   opacity: 0;
+   right: 100px;
+   top: 100px;
+   z-index: 1000;
+   transform: rotateY(45deg);;
+   transition: all .3s ease-in-out;
+}
+.admin-edit-menu.fade.in {
+   z-index: 1000;
+   transform: rotateY(0deg);
+   opacity: 1;
+   transition: all .3s ease-in-out;
+   box-shadow: 0px 2px 3px rgba(17, 17, 17, 0.71);
+}
+
+.admin-edit-menu-list {
+   display: block;
+   background: #E0E0E0;
+   height: auto;
+   width: 120px;
+   filter: grayscale(100%);
+   padding: 0;
+   list-style: none;
+   font-size: 1.3em;
+   margin: 0;
+}
+
+
+.admin-edit-menu-item {
+   height: 50px;
+   text-align: center;
+   position: relative;
+   transition: all .3s ease-in-out;
+}
+.admin-edit-menu-item:hover {
+   background: rgba(141, 176, 67, 0.79);
+   transition: all .3s ease-in-out;
+}
+
+.edit-menu-item-link {
+   color: #2E3138;
+   top: 14px;
+   position: relative;
+}
+
+
+
+/// Settings Button + Inner Styling
+
+.admin-settings-menu-btn {
+   position: fixed;
+   height: 60px;
+   width: 60px;
+   z-index: 1000;
+   background: #673AB7;
+   top: 175px;
+   right: 25px;
+   border-radius: 3em;
+   box-shadow: 0px 1px 3px #3C3C3C;
+}
+
+.admin-settings-menu-btn:hover {
+   transform: scale(1.07);
+   box-shadow: 1px 2px 10px #3C3C3C;
+   cursor: pointer;
+}
+
+
+.admin-settings-menu-btn-inner {
+   font-size: 30px;
+   top: 17px;
+   left: 12px;
+   position: relative;
+   color: #E0E0E0;
+}
+
+.admin-settings-menu.fade {
+   position: fixed;
+   height: auto;
+   opacity: 0;
+   right: 25px;
+   top: 165px;
+   z-index: 1000;
+   transform: rotateX(45deg);;
+   transition: all .3s ease-in-out;
+}
+.admin-settings-menu.fade.in {
+   z-index: 1000;
+   transform: rotateX(0deg);
+   opacity: 1;
+   transition: all .3s ease-in-out;
+   box-shadow: 0px 2px 3px rgba(17, 17, 17, 0.71);
+}
+
+.admin-settings-menu-list {
+   display: block;
+   background: #E0E0E0;
+   height: auto;
+   width: 120px;
+   filter: grayscale(100%);
+   padding: 0;
+   list-style: none;
+   font-size: 1.3em;
+   margin: 0;
+}
+
+
+.admin-settings-menu-item {
+   height: 50px;
+   text-align: center;
+   position: relative;
+   transition: all .3s ease-in-out;
+}
+.admin-settings-menu-item:hover {
+   background: rgba(141, 176, 67, 0.79);
+   transition: all .3s ease-in-out;
+}
+
+.edit-settings-item-link {
+   color: #2E3138;
+   top: 14px;
+   position: relative;
+}

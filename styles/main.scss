@@ -1,0 +1,71 @@
+/* Global Page Styling */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Shadows+Into+Light);
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Shadows Into Light Two', cursive;
+@import 'header';
+@import 'admin/gallery';
+@import 'admin/edit-menu';
+@import 'global/image-viewer';
+@import 'global/modal';
+@import 'global/wysiwyg';
+@import 'global/notification';
+@import 'gallery';
+
+* {
+   box-sizing: border-box;
+}
+html, body {
+   margin: 0;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #E0E0E0;
+   color: #2E3138;
+   font-size: 16px;
+   font-family: 'Shadows Into Light', cursive;
+}
+h1, h2, h3 {
+   font-family: 'Shadows Into Light', cursive;
+   margin: 0;
+}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.9em;}
+
+p {
+   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.loader {
+   position: fixed;
+   left: 43%;
+   top: 35%;
+   font-size: 110px;
+   z-index: 9999;
+}
+
+.main.fadein {
+   opacity: 0;
+}
+.main {
+   opacity: 1;
+   transition: opacity .5s ease-in;
+}
+
+
+#app {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   top: 75px;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.page-header-box {
+   text-align: center;
+}

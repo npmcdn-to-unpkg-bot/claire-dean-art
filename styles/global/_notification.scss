@@ -1,0 +1,32 @@
+/* NEED TO MAKE GLOBAL */
+.notification-modal {
+   position: fixed;
+   z-index: 1000;
+   bottom: 15px;
+   display: inline-block;
+   left: 15px;
+   border: none;
+   border-radius: 2px;
+   overflow: hidden;
+   height: 50px;
+   transition: height 100ms ease-in-out;
+}
+.notification-modal.in {
+   transform: translateX(-200px);
+   height: 0px;
+}
+.notification-modal.out {
+   height: 0px;
+}
+
+.notification-text {
+   margin: 15px;
+   margin-left: 25px;
+   margin-right: 25px;
+   text-align: center;
+}
+
+.notification-inner {
+   width: 100%;
+   position: relative;
+}

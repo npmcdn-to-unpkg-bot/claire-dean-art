@@ -1,0 +1,62 @@
+/* FIXME: Global Gallery Styling*/
+
+.grid {
+   margin-left: 10px;
+   transition: 1s ease-in;
+}
+
+
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item {
+   width: auto;
+   margin-left: 5px;
+   opacity: 0.85;
+   transition: box-shadow 300ms ease-in-out;
+}
+
+.grid-item {
+   &.editable {
+      &:hover {
+         cursor: -webkit-grab; cursor: -moz-grab;
+      }
+      &.is-pointer-down:hover  {
+         box-shadow: 2px 2px 7px black;
+         transition: box-shadow 100ms ease-in-out;
+         cursor: -webkit-grabbing; cursor: -moz-grabbing;
+      }
+   }
+   &:hover {
+      opacity: 1;
+      transition: all 100ms ease-in-out;
+      transform: scale(1.005);
+      cursor: pointer;
+   }
+}
+
+.packery-drop-placeholder {
+   outline: 2px dashed #E0E0E0;
+   opacity: .3;
+   outline-offset: -6px;
+   /* transition position changing */
+   -webkit-transition: -webkit-transform 0.2s;
+      transition: transform 0.2s;
+}
+
+.image {
+   box-shadow: 1px 1px 2px black;
+   transition: box-shadow 100ms ease-in-out;
+}
+
+.image-title-box {
+   position: absolute;
+   bottom: 15px;
+   right: 15px;
+   height: auto;
+   font-size: 20px;
+   color: white;
+}
+
+.image-title {
+   margin: 0;
+}

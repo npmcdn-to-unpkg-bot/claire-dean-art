@@ -1,0 +1,95 @@
+
+/* WYSIWYG Content */
+.editable-content {
+   position: relative;
+   height: auto;
+   width: 90%;
+   left: 5%;
+   background: white;
+   border: solid 1px black;
+   /*TEMP!!*/
+   color:black;
+   /*TEMP^^*/
+}
+
+.wysiwyg-operations-box {
+   z-index: 1000;
+   right: 0;
+   background: rgba(138, 135, 135, 0.8);
+   border-radius: 3px;
+   width: 150px;
+}
+.wysiwyg-operations-format-items-box {
+   background: transparent;
+}
+.wysiwyg-operations-box-handle {
+   cursor: -webkit-grab; cursor: -moz-grab;
+}
+.wysiwyg-operations-box-handle.is-dragging {
+   cursor: -webkit-grabbing; cursor: -moz-grabbing;
+}
+.wysiwyg-operations-item {
+   font-size: 20px;
+   height: 50px;
+   width: 50px;
+   padding: 15px;
+   text-align: center;
+   color: black;
+   background: none;
+   border: none;
+   outline: none;
+}
+.wysiwyg-operations-item:hover {
+   cursor: pointer;
+   color: #A170CF;
+   transition: all .2s ease-in-out;
+}
+
+.wysiwyg-selections-box.font-size {
+   background: rgba(138, 135, 135, 0.8);
+   position: absolute;
+   height: 200px;
+   width: 50px;
+   list-style: none;
+   padding: 0;
+   overflow-y: auto;
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+}
+.selections-box-item.font-size {
+   color: #E0E0E0;
+   height: 40px;
+   padding: 8px;
+   text-align: center;
+   background: rgba(138, 135, 135, 0.8);
+   width: 50px;
+   border: none;
+   border-bottom: solid 1px;
+   font-size: 12px;
+   outline: none;
+}
+.selections-box-item.font-size:hover {
+   cursor: pointer;
+   background-color: #A170CF;
+   transition: all .2s ease-in-out;
+}
+
+
+.contact-form-box {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   background-color: rgba(0,0,0,.50);
+   filter: grayscale(100%);
+}
+.contact-me-form {
+   display: inline-block;
+   text-align: left;
+   background-color: #EEEEEE;
+   color: black;
+   height: auto;
+   box-shadow: 0 2px 3px 0 rgba(48, 48, 48, 1);
+   border-radius: 2px;
+   transition: all .3s ease-in-out;
+   width: auto;
+}
