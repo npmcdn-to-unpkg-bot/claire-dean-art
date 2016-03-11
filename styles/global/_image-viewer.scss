@@ -48,16 +48,19 @@
       background-size: cover;
    }
    &.in-view {
-      transform: translateY(0px);
-      transition: all .3s ease-in-out;
+      opacity: 1;
+      transform: translateY(0px) rotateY(0deg) scale(1);
+      transition: all .4s ease-in-out;
    }
    &.off-left {
-      transform: translateX(-800px);
-      transition: all .3s ease-in-out;
+      opacity: 0;
+      transform: translateX(-800px) rotateY(-60deg) scale(.9);
+      transition: all .4s ease-in-out;
    }
    &.off-right {
-      transform: translateX(800px);
-      transition: all .3s ease-in-out;
+      opacity: 0;
+      transform: translateX(800px) rotateY(60deg) scale(.9);
+      transition: all .4s ease-in-out;
    }
 
 }

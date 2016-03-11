@@ -25,21 +25,15 @@ ImageViewer.prototype.setViewerPosition = function () {
    this.imageInView = this.paths[index];
    console.log("currImageIndex: ", this.currImageIndex);
    if (index == this.paths.length - 1) {
-      console.log("currImageIndex == this.paths.length")
       this.imageInPre = this.paths[index - 1];
       this.imageInPost = this.paths[0];
    } else if (index == 0) {
-      console.log("currImageIndex == 0")
       this.imageInPost = this.paths[index + 1];
       this.imageInPre = this.paths[this.paths.length - 1];
    } else {
-      console.log("Somewhere in the middle");
       this.imageInPre = this.paths[index - 1];
       this.imageInPost = this.paths[index + 1];
    }
-   console.log("left: ", this.imageInPre);
-   console.log("right: ", this.imageInPost);
-   console.log("inView: ", this.imageInView);
 };
 
 ImageViewer.prototype.mount = function () {
