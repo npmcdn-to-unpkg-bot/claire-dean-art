@@ -34,8 +34,8 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-      <script src="https://npmcdn.com/packery@2.0/dist/packery.pkgd.min.js"></script>
-      <script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
+      <script src="https://unpkg.com/packery@2.0/dist/packery.pkgd.min.js"></script>
+      <script src="https://unpkg.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
       <!-- Global App Script -->
       <script src="{{asset('js/app.js')}}"></script>
       <!-- Specific to Page View-->
